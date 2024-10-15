@@ -1,0 +1,502 @@
+/* GLOBAL CONTROLS */
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    color: gray;
+}
+
+.btn-parent {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    color: white;
+    margin-right: 1rem;
+    padding: 0.8rem 1.6rem;
+    background-color: #f63854;
+    border-radius: 4rem;
+    border: 0.1rem solid #f63854;
+    width: 150px;
+    line-height: 30px;
+    font-size: 1em;
+    text-align: center;
+}
+
+.showMeMoreBtn {
+    color: #f63854;
+    background-color: transparent;
+    width: 200px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 225%;
+    text-align: center;
+    text-transform: uppercase;
+    width: fit-content;
+    margin: 1em 0em 1em 0em;
+}
+
+h2.underline {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+h2.underline::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: red;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    top: 120%;
+    transform: translateX(-50%);
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 125%;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 3em;
+    gap: 50px;
+}
+
+/* NAV CONTAINER */
+
+.nav-container {
+    background-image: url(../images/foodiesfeed.com_pizza-ready-for-baking.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+    height: 90vh;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+}
+
+.nav-items {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+.white-anchors {
+    color: white;
+}
+
+/* AWESOME FEATURES SECTION */
+
+.heading-text {
+    padding-top: 5%;
+    padding-left: 20%;
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.everyone-text {
+    color: #f63854;
+}
+
+.booking-buttons {
+    padding-left: 20%;
+    font-weight: bold;
+}
+
+.awesome-features-container {
+    gap: 10px;
+    margin: 2em 1em;
+    padding: 25px 10px 15px 10px;
+    box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.1);
+    width: 400px;
+    height: 300px;
+    flex: 1 1 calc(33%-10px);
+    line-height: 30px;
+}
+
+.card {
+    width: 300px;
+    margin: 2em 1em;
+    padding: 25px 10px 15px 10px;
+    line-height: 30px;
+    box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.1);
+    flex: 1 1 calc(33%-10px);
+}
+
+
+.awesome-features-section h3 {
+    text-align: center;
+    color: rgb(88, 86, 86);
+}
+
+.awesome-features-section p {
+    text-align: justify;
+    padding: 1em;
+}
+
+.awesome-features-section .icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 4em;
+    width: 4em;
+    color: #f63854;
+}
+
+/* STEPS TO FOLLOW SECTION */
+
+.steps-img {
+    width: 400px;
+}
+
+.steps {
+    align-self: center;
+
+}
+
+.steps p {
+    font-size: 1.2em;
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.step-number {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f63854;
+    border: 2px solid #f63854;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 20px;
+    width: 30px;
+    text-align: center;
+}
+
+.step-context {
+    width: auto;
+    padding: 15px;
+    margin: 20px;
+}
+
+/* REVIEWS SECTION */
+
+.reviews-section {
+    background: url(../images/foodiesfeed.com_pizza-ready-for-baking.jpg);
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.review-card {
+    background-color: rgb(220, 230, 231);
+    text-align: center;
+    color: rgb(45, 45, 45);
+    border-radius: 2%;
+    width: 300px;
+    margin: 2em 1em;
+    padding: 25px 10px 15px 10px;
+    line-height: 30px;
+    flex: 1 1 calc(33%-10px);
+}
+
+.review-card img {
+    border-radius: 50%;
+    width: 5em;
+}
+
+.rating {
+    display: inline-block;
+}
+
+.rating img {
+    width: 20px;
+    height: 20px;
+    margin: 10px 0;
+}
+
+/* PLANS SECTION */
+
+.cards-container {
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.card {
+    width: 250px;
+    border: 2px solid lightgray;
+    margin: 3em 0em;
+    padding: 25px 10px 15px 10px;
+    line-height: 30px;
+    box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.1);
+    border-width: 1px;
+    border-color: lightgrey;
+    border-style: solid;
+    border-radius: 4%;
+}
+
+.card ul {
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+.card ul li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.card h3 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card h4 {
+    text-align: center;
+    color: #f63854;
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.card h4 span {
+    color: gray;
+    font-size: 15px;
+}
+
+.signup-button {
+    text-align: center;
+    position: relative;
+    top: 45px;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+
+
+/* SIGNUP SECTION */
+
+.contact-form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #212529;
+    font-size: 1rem;
+    height: 65vh;
+    color: gray;
+}
+
+.contact-form-section {
+    height: fit-content;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bg-video__content {
+    width: 40%;
+    height: 70%;
+    padding: 10%;
+}
+
+form {
+    width: 50%;
+}
+
+.entry {
+    flex: 1 1 calc(100%);
+}
+
+.entry-text {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    border: 2px solid grey;
+    border-radius: 3%;
+    width: 100%;
+    padding: 3%;
+    margin-bottom: 3%;
+}
+
+textarea {
+    height: 7rem;
+}
+
+input[type="checkbox"] {
+    margin-bottom: 5%;
+}
+
+.cards-container {
+    width: fit-content;
+}
+
+
+/* FOOTER SECTION */
+
+footer {
+    background-color: rgb(58, 56, 56);
+}
+
+.footer-parent {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3%;
+    padding-left: 4%;
+}
+
+.footer-apps {
+    width: 70%;
+    padding-right: 6%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-size: 1.5em;
+}
+
+.footer-apps li {
+    padding-right: 6%;
+}
+
+.footer-apps img {
+    width: 100px;
+    height: 30px;
+}
+
+.footer-parent ul {
+    list-style-type: none;
+}
+
+.footer-parent a {
+    list-style-type: none;
+}
+
+.social-link {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+}
+
+.social-link li {
+    padding-right: 10%;
+}
+
+.social-link img {
+    height: 40px;
+}
+
+.footer-p {
+    margin: 20px;
+    font-size: 1em;
+    text-align: center;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* MOBILE */
+@media only screen and (min-width:320px) and (max-width:479px) {
+
+    .container {
+        flex: 1 1 calc(100%-10px);
+    }
+
+    .steps p {
+        font-size: 1.2em;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .signup-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .signup-form {
+        flex: 1 1 calc(100%-10px);
+        flex-wrap: wrap;
+    }
+}
+
+/* TAB */
+@media only screen and (min-width:768px) and (max-width:1023px) {
+
+    .container {
+        flex: 1 1 calc(50%-10px);
+    }
+
+    .signup-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contact-form-section {
+        height: fit-content;
+    }
+
+    .signup-form {
+        flex: 1 1 calc(100%-10px);
+        width: 40%;
+        flex-wrap: wrap;
+    }
+}
